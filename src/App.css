@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+html, body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  background-color: hsl(0, 0%, 100%);
+  overflow-x: hidden; /* prevent horizontal scrolling site-wide */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 20px;
+  color:#221c1c
+  
+}
+
+.title {
+  color: #2c3e50;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.title-logo:hover {
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f8f9fa;
+}
+.p {
+  color:#35c83a;
+  
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Wrapper to center search bar */
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px; 
+}
+
+/* Search container styling */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px; 
+  background-color: #ffffff;
+  border: 2px solid #4CAF50;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(219, 216, 216, 0.917);
+}
+
+/* Input field */
+.search-container input {
+  width: 500px;
+  height: 48px;
+  padding: 0 14px;
+  font-size: 18px;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.search-container input:focus {
+  border-color: #388e3c;
+}
+
+/* Dropdown styling */
+.search-container select {
+  height: 48px;
+  padding: 0 10px;
+  font-size: 16px;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  outline: none;
+  background-color: #ffffff;
+  color: #333333;
+  cursor: pointer;
+}
+
+/* Search button */
+.search-container button {
+  height: 48px;
+  padding: 0 20px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search-container button:hover {
+  background-color: #388e3c;
+}
+
+/* Wrapper for filters */
+.filters-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px; /* Reduced gap between search & filters */
+}
+
+/* Filters container styling */
+.filters-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px; /* Same padding as search */
+  background-color: #ffffff;
+  border: 2px solid #4CAF50;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Filters dropdowns */
+.filters-container select {
+  height: 48px;
+  padding: 0 14px;
+  font-size: 16px;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  outline: none;
+  background-color: #ffffff;
+  color: #333333;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.filters-container select:focus {
+  border-color: #388e3c;
+}
+
+/* Filters button */
+.filters-container button {
+  height: 48px;
+  padding: 0 20px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.filters-container button:hover {
+  background-color: #388e3c;
+}
+
+
+.smart-recipes-title {
+  margin-top: 16px; 
+  margin-bottom: 8px; 
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #e74c3c;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.meal-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.meal-card {
+  width: 250px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.meal-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.meal-card button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #ff5722;
+  color: rgb(248, 248, 248);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 1, 1, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: rgb(255, 255, 255);
+  background-color: #dfdfdf;
+  padding: 20px;
+  width: 600px;
+  border-radius: 12px;
+  overflow-y: auto;
+  overflow-x: hidden; /* allow vertical scrolling only inside modal */
+  max-height: 90vh;
+}
+
+/* Constrain modal image size and keep it responsive */
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+  max-height: 40vh;
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  .search-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+  
+  .search-container input {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .filters-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+  
+  .filters-container select {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .meal-list {
+    gap: 15px;
+  }
+  
+  .meal-card {
+    width: 200px;
+  }
+  
+  .modal-content {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px;
+    padding: 15px;
+  }
+  
+  .modal-content img {
+    max-height: 30vh;
+  }
+  
+  .smart-recipes-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .search-container input {
+    width: 100%;
+    max-width: 250px;
+    font-size: 16px;
+  }
+  
+  .filters-container select {
+    width: 100%;
+    max-width: 250px;
+    font-size: 14px;
+  }
+  
+  .meal-card {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  .modal-content {
+    width: 95%;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .modal-content img {
+    max-height: 25vh;
+  }
+  
+  .smart-recipes-title {
+    font-size: 1.25rem;
+  }
+  
+  .close-btn {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-content {
+    width: 700px;
+  }
+  
+  .meal-card {
+    width: 280px;
+  }
+}
+
+.close-btn {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
